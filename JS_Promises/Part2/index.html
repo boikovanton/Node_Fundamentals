@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Deck of Cards</title>
+  <style>
+    body {
+      background: #3f7f3a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: sans-serif;
+    }
+    #controls {
+      margin-top: 20px;
+    }
+    #controls button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #card-area {
+      position: relative;
+      width: 600px;
+      height: 400px;
+      margin-top: 20px;
+    }
+    #card-area img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 200px;
+      transition: transform 0.2s;
+    }
+  </style>
+</head>
+<body>
+  <h1>Deck of Cards</h1>
+
+  <div id="controls">
+    <button id="draw" disabled>Draw a Card</button>
+    <button id="reset">Reset Deck</button>
+  </div>
+
+  <div id="card-area"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
