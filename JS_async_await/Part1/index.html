@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Number Facts - Async/Await</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 20px auto;
+      line-height: 1.5;
+    }
+    h1, h2 {
+      margin-bottom: 0.5rem;
+    }
+    #facts-section p {
+      margin: 0.25rem 0;
+    }
+    .fact-block {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      background-color: #f9f9f9;
+    }
+    button {
+      padding: 8px 16px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Number Facts (Async/Await Version)</h1>
+  <button id="load-btn">Load Number Facts</button>
+
+  <div id="facts-section">
+    <div class="fact-block">
+      <h2>1. Single Favorite Number Fact</h2>
+      <div id="single-fact"></div>
+    </div>
+
+    <div class="fact-block">
+      <h2>2. Multiple Numbers in One Request</h2>
+      <div id="multi-facts"></div>
+    </div>
+
+    <div class="fact-block">
+      <h2>3. Four Facts About Favorite Number</h2>
+      <div id="four-facts"></div>
+    </div>
+  </div>
+
+  <!-- Axios CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!-- Your JS -->
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Deck of Cards - Async/Await</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 20px auto;
+      line-height: 1.5;
+    }
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+    button {
+      padding: 8px 16px;
+      margin: 5px 5px 20px 0;
+      cursor: pointer;
+    }
+    #cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .card {
+      display: inline-block;
+    }
+    .card img {
+      display: block;
+      width: 100px;
+    }
+    #log {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #333;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Deck of Cards (Async/Await)</h1>
+
+  <!-- Buttons just for you to trigger steps if you want -->
+  <button id="btn-step1">Run Step 1 (Single Card)</button>
+  <button id="btn-step2">Run Step 2 (Two Cards Same Deck)</button>
+  <br>
+
+  <!-- Main UI for Step 3 -->
+  <button id="btn-new-deck">New Deck</button>
+  <button id="btn-draw-card" disabled>Draw Card</button>
+
+  <div id="cards-container"></div>
+
+  <div id="log"></div>
+
+  <!-- Axios CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!-- Your JS -->
+  <script src="app.js"></script>
+</body>
+</html>
